@@ -35,4 +35,9 @@ public class PositionService implements IPositionService {
 		return repository.queryByTimestamp(vehicleId, timestamp);
 	}
 
+	@Override
+	public PositionEntity queryListByTime(long vechicleId, long starttime, long endtime) {
+		return repository.queryListByTime(vechicleId, starttime, endtime);
+	}
+
 }

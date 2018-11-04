@@ -5,13 +5,14 @@ import org.springframework.stereotype.Service;
 import com.vehicle.position.services.api.IVehicleService;
 import com.vehicle.position.services.so.VehicleSessionSo;
 
-// TODO
+
 @Service
 public class VehicleService implements IVehicleService {
 
-	@Override
-	public long getIdBySession(String session) {
-		return 0;
+	// This part should be done through some authentication service or redis service.
+	@Override	
+	public long getIdBySession(String session) { // default 1l; for test
+		return 1l;
 	}
 
 	@Override

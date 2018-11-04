@@ -41,5 +41,7 @@ public class VehicleSessionSo {
 	public void setEndtime(long endtime) {
 		this.endtime = endtime;
 	}
+	
+	
 
 }

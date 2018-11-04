@@ -32,6 +32,10 @@ public class PositionController {
 	public PositionEntity queryByTimestamp(long vechicleId, long timestamp) {
 		return service.queryPositionByTimestamp(vechicleId, timestamp);
 	}
+	@GetMapping("queryListByTime")
+	public PositionEntity queryListByTime(long vechicleId, long starttime, long endtime) {
+		return service.queryListByTime(vechicleId, starttime, endtime);
+	}
 
 	@GetMapping("queryLastPosition")
 	public PositionEntity queryLastPosition(long vechicleId) {
@@ -43,7 +47,7 @@ public class PositionController {
 		return service.queryBySession(session);
 	}
 
-	@GetMapping("queryAll")
+	@GetMapping("queryByVehicle")
 	public List<PositionEntity> queryAll(long vechicleId) {
 		return service.queryAll(vechicleId);
 	}

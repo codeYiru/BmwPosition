@@ -9,6 +9,7 @@ com/vehicle/position/config/PositionSessionVerifyInterceptor.class
 com/vehicle/position/repository/PositionRepository.class
 com/vehicle/position/services/so/VehicleSessionSo.class
 com/vehicle/position/controller/ProcessController.class
+com/vehicle/position/entities/VehicleUser.class
 com/vehicle/position/entities/PositionEntity.class
 com/vehicle/position/services/impl/SaveService.class
 com/vehicle/position/auth/api/IAuthService.class

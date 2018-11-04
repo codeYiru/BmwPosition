@@ -25,4 +25,6 @@ public interface IPositionService {
 	
 	public PositionEntity queryPositionByTimestamp(long vechicleId, long timestamp);
 
+	public PositionEntity queryListByTime(long vechicleId, long starttime, long endtime);
+
 }

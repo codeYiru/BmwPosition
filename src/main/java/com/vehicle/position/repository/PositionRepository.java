@@ -22,4 +22,7 @@ public interface PositionRepository extends CrudRepository<PositionEntity, Long>
 	
 	@Query(value="select * from vehicle_position where vehicle_id = ?1 order by id desc limit 0,1", nativeQuery=true)
 	public PositionEntity queryLastPosition(long vehicleId);
+
+	@Query(value="select * from vehicle_position where vehicle_id = ?1 and timestamp between ?2 and ?3 ", nativeQuery=true)
+	public PositionEntity queryListByTime(long vehicleId, long starttime, long endtime);
 }
